@@ -1,50 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First page (SKVOT course)</title>
-</head>
-<body>
-    <h2>Отчет по Домашнему заданию №2</h2>
-    <table border="1" cellpadding="7" cellspacing="1">
-        <tr>
-            <td colspan="3" bgcolor="#D3EDF6" align="center">Ход выполнения дом. задания</td>
-        </tr>
-        <tr>
-            <td valign="top" align="center">Задача</td>
-            <td width="10%" valign="top">Статус</td>
-            <td valign="top" align="center">Примечания</td>
-        </tr>
-        <tr>
-            <td>Зарегистрироваться на GitHub-e</td>
-            <td>Выполнено</td>
-            <td>сложности не вызывает, user EugenIV</td>
-        </tr>
-        <tr>
-            <td>Установить приложение на комп. Git</td>
-            <td>Выполнено</td>
-            <td>сложности не вызывает, mintty 3.2.0</td>
-        </tr>
-        <tr>
-            <td>Установить Visual Studio Code</td>
-            <td>Выполнено</td>
-            <td>сложности не вызывает, Version: 1.47.3 (user setup)
-                Commit: 91899dcef7b8110878ea59626991a18c8a6a1b3e
-            </td>
-        </tr>
-        <tr>
-            <td>Создать пустую страничку и "запушить" на гит-хаб</td>
-            <td>Выполнено</td>
-            <td>Назвал её сначала как Index - и при деплое не работало (Заглавная буква),
-                долго искал причину, а когда понял - искал как переименовать, в итоге всё 
-                получилось, НО пришлось снова клонировать 
-            </td>
-        </tr>
 
-    </table>  
-    <p>Пока неясно как связывать Git и VSC - всё автоматически связалось.</p>
-    <p>Как переместить файлы проекта на локальном компьютере в другую папку - что-бы все дальше работало? </p>
-    <p>где VSC хранит настройки, как вручную прописать их?</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Домашка №3 (SKVOT course)</title>
+  <style>
+    body {
+      background: #1F364B;
+      color: white;
+      font-family: Sans-serif, Arial;
+      font-style: normal;
+      font-weight: normal;
+      max-width: 800px;
+      margin: 0, auto;
+    }
+
+    A {
+      color: white;
+      /* Цвет ссылок */
+    }
+    }
+
+    .bl-header {
+      /* описатель блока заголовок */
+      height: 170px;
+      padding: 10px;
+      padding-right: 20px;
+      border: none;
+      float: left;
+      margin: 0, auto;
+    }
+
+    .emblema {
+      position: absolute;
+      width: 250px;
+      height: 80px;
+      left: 490px;
+      top: 75px;
+    }
+
+    .bl-Main {
+      /* описатель блока главный вывод */
+      /* width: 200px;*/
+      width: 520px;
+      height: 890px;
+      padding: 35px;
+      border: solid 1px white;
+      border-radius: 92px;
+      float: left;
+      position: relative;
+      top: 40px;
+      left: 900px;
+    }
+
+    p,ul {
+      /* OrdinaryParagraf */
+      font-size: 15px;
+      line-height: 160%;
+      /* or 24px */
+    }
+
+    h2 {
+      /* H2 */
+      font-family: Inconsolata;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 44px;
+
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-family: Inconsolata;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 56px;
+      line-height: 59px;
+      text-transform: uppercase;
+      position: relative;
+      height: 59px;
+      left: 0px;
+      top: 5px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bl-header">
+    <img src="assets/Red_brush.png" alt="" class="emblema">
+    <h1>записки инженера</h1>
+  </div>
+
+  <div class="bl-Main">
+    <p>Привет, Я Евгений.</p>
+    <p>О себе:</p>
+    <p>Закончил Одесский институт связи имени А.С. Попова – по специальности инженер управляющих систем электросвязи.</p>
+    <p>Работал в «Укртелекоме» – строил сеть Интернет Закарпатской области, Украины.</p>
+    <p>Сейчас – фрилансер</p>
+    <p>Сфера работ:</p>
+    <ul>
+      <li>программирование 1С;</li>
+      <li>описание бизнес процессов предприятий в учетных системах;</li>
+      <li>подключение и настройка торгового оборудования к учетным программам;</li>
+      <li>администрирование серверов семейства Windows -2xxx, Unix;</li>
+      <li>Настройка LAMP, LEMP по отдельности и в целом;</li>
+      <li>Проектирование, монтаж и пуск в эксплуатацию локальных вычислительных систем;</li>
+      <li>Проектирование, монтаж и пуск в эксплуатациюсистем видеонаблюдения.</li>
+    </ul>
+    <p>Сфера интересов – микроконтроллеры семейства Arduino, 3D–печать, системы «умный дом», построение квадрокоптеров.
+    </p>
+    <p>Описания, примеры, заметки, ещё мои предпочтения в жизни, а также неупорядоченные мысли - Вы найдете на следующих
+      страницах этого сайта.</p>
+
+    <p>Связаться со мной можно по адресу: <a href="mailto:Vasovchik@gmail.com"> <strong>Vasovchik@gmail.com</strong></a>
+    </p>
+  </div>
+
 </body>
+
 </html>

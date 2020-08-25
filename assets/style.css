@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'DejaVu Sans';
+    src: url('fonts/DejaVuSans.woff2') format('woff2'), url('fonts/DejaVuSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DejaVu Sans';
+    src: url('fonts/DejaVuSans-Bold.woff2') format('woff2'), url('fonts/DejaVuSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DejaVu Sans';
+    src: url('fonts/DejaVuSans-BoldOblique.woff2') format('woff2'), url('fonts/DejaVuSans-BoldOblique.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hero';
+    src: url("fonts/Hero-Regular.woff2") format('woff2'), url("fonts/Hero-Regular.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hero';
+    src: url('fonts/Hero-Bold.woff2') format('woff2'), url('fonts/Hero-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hero';
+    src: url('fonts/Hero-Light.woff2') format('woff2'), url('fonts/Hero-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background: #1F364B;
+    color: white;
+    font-family: Hero, DejaVu Sans, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    max-width: 8000px;
+    margin: .1em;
+    font-size: 1.125rem;
+}
+
+A {
+    color: white;
+    text-decoration: none;
+}
+
+strong {
+    letter-spacing: .05rem;
+}
+
+/* Основные блоки страницы */
+
+.bl-header {
+    position: absolute;
+    float: left;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 470px;
+    padding: 10px;
+    border: none;
+    float: left;
+}
+
+.bl-Main {
+    float: right;
+    padding: 5px;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+}
+
+.bl-footer {
+    position: absolute;
+    float: left;
+    height: 2em;
+    width: 31em;
+    padding: 5px;
+    position: absolute;
+    left: 63%;
+    bottom: .5rem; 
+}
+
+.bl-vizitka {
+    position: relative;
+    float: left;
+    width: 5400px;
+    padding: 0px;
+    border: none;
+    float: left;
+}
+
+.center-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 0rem;
+}
+
+.emblema {
+    position: relative;
+    width: 13rem;
+    height: 4rem;
+    left: 20rem;
+    top: 13rem;
+}
+
+p {
+    /* OrdinaryParagraf */
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 120%;
+}
+
+ul, nav {
+    width: 60%;
+    padding-left: 40%;
+    font-size: 0.9rem;
+    line-height: 160%;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 44px;
+    text-transform: uppercase;
+}
+
+a:hover {
+    /* background-image: url("CommonButton.png"); */
+    text-shadow: 1px 1px 2px grey, 0 0 1em white, 0 0 0.2em grey;
+  
+}
+
+.button {
+    background-color: #c4c4c4;
+    /* Green */
+    border: none;
+    color: white;
+    /* padding: 15px 32px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.scale {
+    display: inline-block;
+    /* Строчно-блочный элемент */
+    overflow: hidden;
+    /* Скрываем всё за контуром */
+}
+
+.scale img {
+    transition: .5s;
+    /* Время эффекта */
+    display: block;
+    /* Убираем небольшой отступ снизу */
+}
+
+.scale img:hover {
+    transform: scale(1.6);
+    /* Увеличиваем масштаб */
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/fonts.css">
+    <title>Document</title>
+    <style>
+        div {
+            display: flex;
+            flex-direction: column;
+            border: 1px dotted red;
+            margin: 5px;
+        }
+
+        main {
+            /* Take the remaining height */
+            flex-grow: 1;
+
+            /* Layout the left sidebar, main content and right sidebar */
+            display: flex;
+            flex-direction: row;
+            border: 1px solid black;
+            margin: 5px;
+        }
+
+        < !-- Left sidebar -->aside {
+            width: 25%;
+        }
+
+        article {
+            /* Take the remaining width */
+            flex-grow: 1;
+            border: 1px solid blueviolet;
+            margin: 5px;
+        }
+
+        /* <!-- Right sidebar --> */
+        nav {
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        ... This is header
+    </header>
+
+    <MAin>
+        Текст в окне мейн
+        <div> <p>paragraf 1</p> </div>
+        <div> <p>paragraf 2</p> </div>
+        <div> <p>paragraf 3</p> </div>
+    </main>
+    <div>
+        <article>LEFT SIDEBAR Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod molestias distinctio, quam
+            sequi eos laboriosam aliquid corrupti voluptas praesentium expedita, placeat soluta consequuntur id
+            perferendis modi deleniti quia commodi quis.</article>
+
+    </div>
+    <aside>
+        <nav>Список НАВ </nav>
+        <ul>1</ul>
+        <ul>2</ul>
+        <ul>3</ul>
+        <ul>4</ul>
+
+
+    </aside>
+
+    </ul>
+
+    <footer>
+        ... This is footer
+    </footer>
+    </div>
+</body>
+
+</html>
+
+
+<div class="cl1">
+    <div class="cl2"></div>
+</div>  
+
+ТОЖДЕСТВЕННО
+
+<div class="cl1 cl2"></div>
